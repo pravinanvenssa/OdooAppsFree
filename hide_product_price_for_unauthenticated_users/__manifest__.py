@@ -5,7 +5,7 @@
     'version': '17.0.1.0',
     'summary': 'Hide product prices for users not logged in',
     'category': 'Website',
-    'author': 'Anvenssa AI',
+    'author': 'Astratech Systems',
     'license': 'LGPL-3',
     'depends': ['product', 'sale'],  
     'data': [
@@ -16,5 +16,16 @@
     'installable': True,
     'application': False,
     'auto_install': False,
+
+    'description': """
+        This module hides product prices for users who are not logged in.
+        Only authenticated users will be able to view product prices.
+        
+        Features:
+        - Admin users can always see product prices.
+        - Prices are hidden for all non-authenticated users.
+        - Admins can view product prices in the inventory, sales, and product pages.
+        - Product prices are hidden across the website to protect sensitive pricing information.
+    """
 }
 
