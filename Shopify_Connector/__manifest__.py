@@ -3,7 +3,7 @@
     'version': '1.0',
     'summary': 'Custom Dashboard for Products, Customers, and Orders',
     'description': """
-        Shopify Connector :- This module provides a custom dashboard for your Shopify store, allowing you to track products, customers, and orders efficiently.</p>
+        Shopify Connector :- This module provides a custom dashboard for your Shopify store, allowing you to track products, customers, and orders efficiently
        
     """,
     'depends': ['base', 'sale', 'stock', 'product'],
