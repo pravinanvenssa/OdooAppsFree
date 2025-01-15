@@ -19,11 +19,11 @@
             '/shopify_connector/static/src/css/styles.css',  # Ensure CSS is loaded
         ],
     },
-    'price': 50.00,
+   'price': 50.00,
     'currency': 'USD',
     'author': 'Astratech Systems',
     'application': True,
     'installable': True,
     'icon': 'shopify_connector/static/description/icon.png',
-    'license': 'GPL-3',
+    'license': 'OPL-1',
 }
