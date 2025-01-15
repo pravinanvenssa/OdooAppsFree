@@ -3,15 +3,15 @@
     'version': '1.0',
     'summary': 'Custom Dashboard for Products, Customers, and Orders',
     'description': """
-        Shopify Dashboard Module
-        ------------------------
-        A module to manage Shopify products, customers, and orders in Odoo.
-        Features include:
-        - Product synchronization
-        - Order management
-        - Real-time updates
-    """, 
-
+        <h3>Shopify Connector</h3>
+        <p>This module provides a custom dashboard for your Shopify store, allowing you to track products, customers, and orders efficiently.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Product Overview</li>
+            <li>Customer Insights</li>
+            <li>Order Management</li>
+        </ul>
+    """,
     'depends': ['base', 'sale', 'stock', 'product'],
     'data': [
         'views/dashboard_view.xml',
@@ -19,17 +19,17 @@
     ],
     'assets': {
         'web.assets_backend': [
-            '/custom_dashboard/static/src/js/dashboard_action.js',  # JS file
-            '/custom_dashboard/static/src/css/styles.css',  # CSS file
+            '/shopify_connector/static/src/js/dashboard_action.js',  # Ensure JS is loaded
+        ],
+        'web.assets_backend': [
+            '/shopify_connector/static/src/css/styles.css',  # Ensure CSS is loaded
         ],
     },
-
-    'images': ['static/description/icon.png'], 
     'price': 50.00,
     'currency': 'USD',
     'author': 'Astratech Systems',
-    'license': 'OPL-1', 
     'application': True,
     'installable': True,
-    'icon': 'custom_dashboard/static/description/icon.png', 
+    'icon': 'shopify_connector/static/description/icon.png',
+    'license': 'GPL-3',
 }

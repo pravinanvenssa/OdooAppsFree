@@ -29,7 +29,7 @@
         <field name="name">custom.dashboard.view</field>
         <field name="model">custom.dashboard</field>
         <field name="arch" type="xml">
-            <form string="shopify connector" create="false" edit="false">
+            <form string="Custom Dashboard" create="false" edit="false">
 
             
         <!-- <header>
