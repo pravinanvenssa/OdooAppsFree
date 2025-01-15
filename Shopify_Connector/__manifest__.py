@@ -1,5 +1,5 @@
 {
-    'name': 'Shopify Dashboard',
+    'name': 'Shopify Connector',
     'version': '1.0',
     'summary': 'Custom Dashboard for Products, Customers, and Orders',
     'depends': ['base', 'sale', 'stock', 'product'],
@@ -9,12 +9,12 @@
     ],
     'assets': {
         'web.assets_backend': [
-            '/custom_dashboard/static/src/js/dashboard_action.js',  # Ensure JS is loaded
+            '/Shopify_Connector/static/src/js/dashboard_action.js',  # Ensure JS is loaded
         ],
     },
     'assets': {
         'web.assets_backend': [
-            '/custom_dashboard/static/src/css/styles.css',
+            '/Shopify_Connector/static/src/css/styles.css',
         ],
     },
 
@@ -24,5 +24,5 @@
     'author': 'Astratech Systems',
     'application': True,
     'installable': True,
-    'icon': 'custom_dashboard/static/description/icon.png',
+    'icon': 'Shopify_Connector/static/description/icon.png',
 }
