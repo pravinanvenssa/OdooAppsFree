@@ -19,8 +19,8 @@
     ],
     'assets': {
         'web.assets_backend': [
-            '/custom_dashboard/static/src/js/dashboard_action.js',  # JS file
-            '/custom_dashboard/static/src/css/styles.css',  # CSS file
+            '/Shopify_Connectors/static/src/js/dashboard_action.js',  # JS file
+            '/Shopify_Connectors/static/src/css/styles.css',  # CSS file
         ],
     },
 
@@ -31,5 +31,5 @@
     'license': 'OPL-1', 
     'application': True,
     'installable': True,
-    'icon': 'custom_dashboard/static/description/icon.png', 
+    'icon': 'Shopify_Connectors/static/description/icon.png', 
 }
