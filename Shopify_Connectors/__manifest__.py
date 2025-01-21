@@ -19,12 +19,13 @@
     ],
     'assets': {
         'web.assets_backend': [
-            '/Shopify_Connectors/static/src/js/dashboard_action.js',  # JS file
-            '/Shopify_Connectors/static/src/css/styles.css',  # CSS file
+            '/Shopify_Connectors/static/src/js/dashboard_action.js',  
+            '/Shopify_Connectors/static/src/css/styles.css',  
         ],
     },
 
-    'images': ['static/description/icon.jpg'], 
+    # 'images': ['static/description/icon.jpg'], 
+    'images': ['static/description/icon-dash.gif'], 
     'price': 50.00,
     'currency': 'USD',
     'author': 'Astratech Systems',
