@@ -25,7 +25,7 @@
     },
 
     # 'images': ['static/description/icon.jpg'], 
-    'images': ['static/description/icon-dash.gif'], 
+    'images': ['static/description/icon-in.gif'], 
     'price': 50.00,
     'currency': 'USD',
     'author': 'Astratech Systems',
