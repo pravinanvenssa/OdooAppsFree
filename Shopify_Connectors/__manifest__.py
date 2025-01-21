@@ -18,6 +18,12 @@
         'security/ir.model.access.csv',
     ],
     'assets': {
+    'web.assets_frontend': [
+        'Shopify_Connectors/static/src/img/*.png',
+        'Shopify_Connectors/static/src/img/*.jpg',
+    ],
+},
+    'assets': {
         'web.assets_backend': [
             '/Shopify_Connectors/static/src/js/dashboard_action.js',  # JS file
             '/Shopify_Connectors/static/src/css/styles.css',  # CSS file
