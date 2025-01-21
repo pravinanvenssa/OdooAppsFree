@@ -57,7 +57,7 @@
                         <div class="o_dashboard_card" style="background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%); color: #fff; padding: 20px; border-radius: 10px; position: relative;">
                             <div style="display: flex; align-items: center;">
                                 <div style="flex: 0 0 60px; margin-right: 10px;">
-                                    <img class="img-fluid ticket-img" src="/custom_dashboard/static/src/img/open-tickets-img.png" width="60"/>
+                                    <img class="img-fluid ticket-img" src="/Shopify_Connectors/static/src/img/open-tickets-img.png" width="60"/>
                                 </div>
                                 <div style="flex: 1; text-align: center;">
                                     <h3>Products</h3>
@@ -79,7 +79,7 @@
                         <div class="o_dashboard_card" style="background: linear-gradient(135deg, #f48665 0%, #fda23f 100%); color: #fff; padding: 20px; border-radius: 10px; position: relative;">
                             <div style="display: flex; align-items: center;">
                                 <div style="flex: 0 0 60px; margin-right: 10px;">
-                                    <img class="img-fluid ticket-img" src="/custom_dashboard/static/src/img/pending-tickets-img.png" width="60"/>
+                                    <img class="img-fluid ticket-img" src="/Shopify_Connectors/static/src/img/pending-tickets-img.png" width="60"/>
                                 </div>
                                 <div style="flex: 1; text-align: center;">
                                     <h3>Customers</h3>
@@ -101,7 +101,7 @@
                         <div class="o_dashboard_card" style="background: linear-gradient(135deg, #f0466b 0%, #ef6784 100%); color: #fff; padding: 20px; border-radius: 10px; position: relative;">
                             <div style="display: flex; align-items: center;">
                                 <div style="flex: 0 0 60px; margin-right: 10px;">
-                                    <img class="img-fluid ticket-img" src="/custom_dashboard/static/src/img/close-tickets-img.png" width="60"/>
+                                    <img class="img-fluid ticket-img" src="/Shopify_Connectors/static/src/img/close-tickets-img.png" width="60"/>
                                 </div>
                                 <div style="flex: 1; text-align: center;">
                                     <h3>Orders</h3>
