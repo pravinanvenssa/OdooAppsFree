@@ -1,0 +1,139 @@
+<odoo>
+    <!-- Action for Product Template -->
+    <record id="product_template_action" model="ir.actions.act_window">
+        <field name="name">Products</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <!-- Action for Customers -->
+    <record id="res_partner_action" model="ir.actions.act_window">
+        <field name="name">Customers</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('customer_rank', '>', 0)]</field>
+    </record>
+
+    <!-- Action for Orders -->
+    <record id="action_orders" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="res_model">sale.order</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+    </record>
+    
+
+    <!-- Custom Dashboard View -->
+    <record id="view_custom_dashboard" model="ir.ui.view">
+        <field name="name">custom.dashboard.view</field>
+        <field name="model">custom.dashboard</field>
+        <field name="arch" type="xml">
+            <form string="Custom Dashboard" create="false" edit="false">
+
+            
+        <!-- <header>
+           
+            <button name="action_shopify" type="object" string="Shopify" class="btn-primary"
+                    style="float: left; margin-left: 10px; margin-right: auto; border: none; box-shadow: none;"/>
+        </header> -->
+    
+                <!-- <h4 class="text-primary text-center mb-4">Shopify Dashboard</h4>
+                 <div style="text-align: center; margin-top: 20px;">
+            <button name="action_shopify" type="object" string="Shopify" class="btn-primary"
+                    style="border: none; box-shadow: none;"/> -->
+
+                    
+         <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h4 class="text-primary mb-4" style="flex: 1; text-align: center;">Shopify Dashboard</h4>
+            <!-- Shopify Button (aligned to the right) -->
+            <button name="action_shopify" type="object" string="sync_data" class="btn-primary"
+                    style="border: none; box-shadow: none; float: right;"/>
+        </div>
+                <div class="o_row" style="display: flex; gap: 20px; justify-content: center; margin-top: 20px;">
+                    
+                    <!-- Products Card -->
+                    <div class="o_col-md-3" style="max-width: 250px;">
+                        <div class="o_dashboard_card" style="background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%); color: #fff; padding: 20px; border-radius: 10px; position: relative;">
+                            <div style="display: flex; align-items: center;">
+                                <div style="flex: 0 0 60px; margin-right: 10px;">
+                                    <img class="img-fluid ticket-img" src="/Shopify_Connectors/static/src/img/open-tickets-img.png" width="60"/>
+                                </div>
+                                <div style="flex: 1; text-align: center;">
+                                    <h3>Products</h3>
+                                    <h2>
+                                        <a href="#" type="action" name="%(product_template_action)d" style="color: black; font-weight: bold; text-decoration: none;">
+                                            <field name="product_count"/>
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <!-- Pseudo-elements -->
+                            <div style="position: absolute; content: ''; background: rgba(255, 255, 255, 0.2); border-radius: 50%; right: -50px; width: 130px; height: 130px; bottom: -50px;"></div>
+                            <div style="position: absolute; content: ''; background: rgba(255, 255, 255, 0.2); border-radius: 50%; right: -50px; width: 85px; height: 85px; bottom: 50px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Customers Card -->
+                    <div class="o_col-md-3" style="max-width: 250px;">
+                        <div class="o_dashboard_card" style="background: linear-gradient(135deg, #f48665 0%, #fda23f 100%); color: #fff; padding: 20px; border-radius: 10px; position: relative;">
+                            <div style="display: flex; align-items: center;">
+                                <div style="flex: 0 0 60px; margin-right: 10px;">
+                                    <img class="img-fluid ticket-img" src="/Shopify_Connectors/static/src/img/pending-tickets-img.png" width="60"/>
+                                </div>
+                                <div style="flex: 1; text-align: center;">
+                                    <h3>Customers</h3>
+                                    <h2>
+                                        <a href="#" type="action" name="%(res_partner_action)d" style="color: black; font-weight: bold; text-decoration: none;">
+                                            <field name="customer_count"/>
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <!-- Pseudo-elements -->
+                            <div style="position: absolute; content: ''; background: rgba(255, 255, 255, 0.2); border-radius: 50%; right: -50px; width: 130px; height: 130px; bottom: -50px;"></div>
+                            <div style="position: absolute; content: ''; background: rgba(255, 255, 255, 0.2); border-radius: 50%; right: -50px; width: 85px; height: 85px; bottom: 50px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Orders Card -->
+                    <div class="o_col-md-3" style="max-width: 250px;">
+                        <div class="o_dashboard_card" style="background: linear-gradient(135deg, #f0466b 0%, #ef6784 100%); color: #fff; padding: 20px; border-radius: 10px; position: relative;">
+                            <div style="display: flex; align-items: center;">
+                                <div style="flex: 0 0 60px; margin-right: 10px;">
+                                    <img class="img-fluid ticket-img" src="/Shopify_Connectors/static/src/img/close-tickets-img.png" width="60"/>
+                                </div>
+                                <div style="flex: 1; text-align: center;">
+                                    <h3>Orders</h3>
+                                    <h2>
+                                        <a href="#" type="action" name="%(action_orders)d" style="color: black; font-weight: bold; text-decoration: none;">
+                                            <field name="order_count"/>
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <!-- Pseudo-elements -->
+                            <div style="position: absolute; content: ''; background: rgba(255, 255, 255, 0.2); border-radius: 50%; right: -50px; width: 130px; height: 130px; bottom: -50px;"></div>
+                            <div style="position: absolute; content: ''; background: rgba(255, 255, 255, 0.2); border-radius: 50%; right: -50px; width: 85px; height: 85px; bottom: 50px;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for the Custom Dashboard -->
+    <record id="action_custom_dashboard" model="ir.actions.act_window">
+        <field name="name">Custom Dashboard</field>
+        <field name="res_model">custom.dashboard</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+    </record>
+
+    <!-- Root Menu for Custom Dashboard -->
+    <menuitem id="menu_custom_dashboard_root" name="Shopify Dashboard" sequence="1"/>
+
+    <!-- Submenu for Opening the Dashboard View -->
+    <menuitem id="menu_custom_dashboard_view" name="Dashboard" parent="menu_custom_dashboard_root" action="action_custom_dashboard" sequence="1"/>
+</odoo>
