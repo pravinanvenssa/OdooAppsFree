@@ -19,12 +19,12 @@
     ],
    
     # 'images': ['static/description/icon.jpg'], 
-    'images': ['static/description/images/icon-in.gif'], 
+    # 'images': ['static/description/images/icon-in.gif'], 
     'price': 50.00,
     'currency': 'USD',
     'author': 'Astratech Systems',
     'license': 'OPL-1', 
     'application': True,
     'installable': True,
-    'icon': 'Shopify_Connectors/static/description/icon.png', 
+    # 'icon': 'Shopify_Connectors/static/description/icon.png', 
 }
