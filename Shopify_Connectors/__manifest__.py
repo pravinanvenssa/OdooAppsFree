@@ -26,5 +26,5 @@
     'license': 'OPL-1', 
     'application': True,
     'installable': True,
-    'icon': 'Shopify_Connectors/static/description/icon.png', 
+    # 'icon': 'Shopify_Connectors/static/description/icon.png', 
 }
